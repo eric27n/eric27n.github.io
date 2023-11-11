@@ -138,6 +138,12 @@ footer {
     margin: 5px 0;
 }
 
+.smaller-text {
+    margin-top: 5px;
+    font-size: 0.75rem;
+    color: #333333;
+}
+
 .footer-right {
     display: flex;
     align-items: center;
