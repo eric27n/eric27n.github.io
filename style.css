@@ -1,24 +1,51 @@
+/* Typography */
 body {
     display: flex;
     justify-content: center;
     flex-direction: column;
     font-family: 'Lato', Verdana, sans-serif;
     margin: auto;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Links */
 body a {
     text-decoration: none;
     color: #005db6;
+    transition: color 0.3s;
 }
 
 body a:hover {
     color: #0074e4;
 }
 
+/* Header */
 header {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -37,6 +64,12 @@ nav li {
 nav a {
     text-decoration: none;
     font-size: 18px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0074e4;
 }
 
 .nav-name {
@@ -46,35 +79,37 @@ nav a {
     margin-right: 20px;
 }
 
+/* Profile Picture */
 .profile-picture {
     margin: 20px;
     float: right;
     width: 250px;
     height: 250px;
     border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Main Content */
 .main-content {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: auto;
     width: 60%;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.content-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    max-width: 800px;
-    padding: 20px;
-}
-
+/* Entries */
 .entry {
     display: flex;
     margin: 20px 0;
     align-items: flex-start;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .image {
@@ -89,6 +124,7 @@ nav a {
     max-height: 150px;
     object-fit: cover;
     margin-right: 20px;
+    border-radius: 8px;
 }
 
 .title {
@@ -122,12 +158,14 @@ nav a {
     line-height: 1.4;
 }
 
+/* Footer */
 footer {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .footer-left {
@@ -158,93 +196,37 @@ footer {
     height: 50px;
 }
 
-.linkedin-footer {
+/* Social Media Icons */
+.linkedin-footer, .github-footer, .spotify-footer {
     display: block;
-	position: relative;
+    position: relative;
 }
 
-.linkedin-footer .linkedin-black {
-	opacity: 1;
-	transition: opacity 0.5s;
+.linkedin-footer .linkedin-black, .github-footer .github-black, .spotify-footer .spotify-black {
+    opacity: 1;
+    transition: opacity 0.5s;
 }
 
-.linkedin-footer .linkedin-top {
-	opacity: 0;
-	position: absolute;
-	transition: opacity 0.5s;
-	top: 0;
+.linkedin-footer .linkedin-top, .github-footer .github-top, .spotify-footer .spotify-top {
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.5s;
+    top: 0;
     right: 0;
     left: 0;
     bottom: 0;
     object-fit: contain;
 }
 
-.linkedin-footer:hover .linkedin-black {
-	opacity: 0;
+.linkedin-footer:hover .linkedin-black, .github-footer:hover .github-black, .spotify-footer:hover .spotify-black {
+    opacity: 0;
 }
 
-.linkedin-footer:hover .linkedin-top {
-	opacity: 1;
+.linkedin-footer:hover .linkedin-top, .github-footer:hover .github-top, .spotify-footer:hover .spotify-top {
+    opacity: 1;
 }
 
-.github-footer {
-    display: block;
-	position: relative;
-}
-
-.github-footer .github-black {
-	opacity: 1;
-	transition: opacity 0.5s;
-}
-
-.github-footer .github-top {
-	opacity: 0;
-	position: absolute;
-	transition: opacity 0.5s;
-	top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    object-fit: contain;
-}
-
-.github-footer:hover .github-black {
-	opacity: 0;
-}
-
-.github-footer:hover .github-top {
-	opacity: 1;
-}
-
-.spotify-footer {
-    display: block;
-	position: relative;
-}
-
-.spotify-footer .spotify-black {
-	opacity: 1;
-	transition: opacity 0.5s;
-}
-
-.spotify-footer .spotify-top {
-	opacity: 0;
-	position: absolute;
-	transition: opacity 0.5s;
-	top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    object-fit: contain;
-}
-
-.spotify-footer:hover .spotify-black {
-	opacity: 0;
-}
-
-.spotify-footer:hover .spotify-top {
-	opacity: 1;
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
     .entry {
         flex-direction: column;
