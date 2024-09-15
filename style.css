@@ -112,6 +112,11 @@ nav a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+#projects .entry:not(.favorite) {
+    display: none;
+    background-color: #f2f2f2;
+}
+
 .image {
     display: flex;
     align-items: flex-start;

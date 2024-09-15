@@ -25,18 +25,17 @@
             <img src="data/images/eric-nunes.JPG" class="profile-picture" alt="Profile Picture">
             <h1>Howdy, I'm Eric Nunes! 🤠</h1>
             <p>I am an aspiring data scientist with strong skills in software engineering.
-                Born and raised in Texas to Brazilian immigrants, I'm currently an undergraduate
-                computer science student at Texas A&M University! I have committed plans to pursue
-                a Master of Science in Computer Science starting in Fall 2024 and anticipate to
-                graduate in Spring 2026, with focus areas in machine learning and natural language
-                processing.</p>
-            <p>Currently, I'm spending my time working as a peer teacher, performing undergraduate 
-                research, and working on several projects, both for school and for organizations.
-                If you're interested in reading my work in one page, feel free to take a look at my
-                <a href="data/Eric_Nunes_Resume_2311.pdf" target="_blank" rel="noopener noreferrer">
-                resume</a> (last updated November 2023). If you're interested in collaborating with
-                me and any of my interests (machine learning, NLP, statistics data science, music
-                discovery, long-distance running), come and <a href="mailto:eric27n@me.com">
+                Born and raised in Texas to Brazilian immigrants, I'm currently a graduate
+                computer science student at the University of Massachusetts Amherst, having recently
+                completed my undergraduate computer science degree at Texas A&M University! I
+                anticipate to graduate with my Master's in Computer Science in Spring 2026, with a
+                focus in data science and natural language processing.</p>
+            <p>Currently, I'm spending my time working on several projects, both for school and for
+                student organizations. If you're interested in a one-page summary of my work, feel
+                free to take a look at my <a href="data/Eric_Nunes_Resume_2409.pdf" target="_blank"
+                rel="noopener noreferrer">resume</a> (last updated September 2024). If you're
+                interested in collaborating with me and any of my interests (data science, machine
+                learning, NLP, statistics, music, running), come and <a href="mailto:eric27n@me.com">
                 reach out</a>, I'd love to talk!</p>
             <hr>
             <div id="experience">
@@ -150,7 +149,11 @@
                             <span class="separator">|</span> Expected May '26
                         </p>
                         <ul class="content">
-                            <li>Enrolling at UMass Amherst in Fall '24 to pursue an MSCS Degree.</li>
+                            <li><b>GPA:</b> 4.000/4.000</li>
+                            <li><b>Concentration:</b> Data Science</li>
+                            <li><b>Selected Coursework:</b> Algorithms in Data Science, Decarbonization
+                                and Data Science, Machine Learning, Research Methods in Computer
+                                Science</li>
                         </ul>
                     </div>
                 </section>
@@ -178,7 +181,39 @@
             <hr>
             <div id="projects">
                 <h2>Projects</h2>
+                <p><b>Note: </b>Due to academic honor codes, NDAs, and other confidentiality
+                    agreements, not all project code can be public. If you would like access to a
+                    project repository, please send me an email and provide context to request access.</p>
+                <p>Only featured projects are shown by default. Toggle the checkbox to view all projects.</p>
+                <label>
+                    <input type="checkbox" id="toggle-projects"> Show All Projects
+                </label>
                 <section class="entry">
+                    <div class="image">
+                        <img src="data/images/general_motors_logo.png" 
+                        alt="Icon for General Motors">
+                    </div>
+                    <div class="details">
+                        <h3 class="title">General Motors Introductory Research Project</h3>
+                        <p class="role">
+                            Feb '24 - May '24 <span class="separator">|</span>
+                            Aggie Data Science Club
+                        </p>
+                        <ul class="content">
+                            <li>Served as project manager for a partnership between the Aggie Data
+                                Science Club and General Motors by expanding upon transportation
+                                research from the Federal Highway Administration's National Highway
+                                Travel Survey and identifying applications for GM's mission
+                                statement.</li>
+                            <li>Led a team of 40 students to gain skills in understanding
+                                data science applications in research, including research on
+                                California traffic flow and commuter trends across NHTS surveys.</li>
+                            <li><b>Skills:</b> Python, Python Libraries (SKLearn, Pandas, NumPy),
+                                Time-Series Analysis</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="entry favorite">
                     <div class="image">
                         <img src="data/images/maroon_health_logo_heart_black.png" 
                         alt="Icon for Maroon Health">
@@ -187,9 +222,9 @@
                         <h3 class="title">Maroon Health Website</h3>
                         <p class="role">
                             Jan '24 - Apr '24 <span class="separator">|</span> CSCE 431: Software
-                            Engineering <span class="separator">|</span> <a href="https://github.com/c2003-tamu/maroon-health-site"
+                            Engineering <span class="separator">|</span> <a href="https://prod-maroon-health-787ade789f66.herokuapp.com/"
                             target="_blank" rel="noopener noreferrer">[link]</a>
-                        </p>
+                        </p> <!-- https://github.com/c2003-tamu/maroon-health-site -->
                         <ul class="content">
                             <li>Served as scrum master in a group of 6 to develop a website
                                 application for Maroon Health, a student organization providing
@@ -225,7 +260,7 @@
                         </ul>
                     </div>
                 </section>
-                <section class="entry">
+                <section class="entry favorite">
                     <div class="image">
                         <img src="data/images/twitter_logo.png" alt="Logo for Twitter">
                     </div>
@@ -246,7 +281,7 @@
                         </ul>
                     </div>
                 </section>
-                <section class="entry">
+                <section class="entry favorite">
                     <div class="image">
                         <img src="data/images/tamu_aotw_logo.png" 
                         alt="Logo of TAMU Album of the Week">
@@ -270,7 +305,7 @@
                         </ul>
                     </div>
                 </section>
-                <section class="entry">
+                <section class="entry favorite">
                     <div class="image">
                         <img src="data/images/american_airlines_logo.png" 
                         alt="Logo of American Airlines">
@@ -336,52 +371,41 @@
                     </div>
                 </section>
                 <h4>🚧Projects In Development🚧</h4>
-                <section class="entry">
-                    <div class="image">
-                        <img src="data/images/general_motors_logo.png" 
-                        alt="Icon for General Motors">
-                    </div>
-                    <div class="details">
-                        <h3 class="title">General Motors Data Science Collaboration</h3>
-                        <p class="role">
-                            Feb '24 - Present <span class="separator">|</span>
-                            Aggie Data Science Club
-                        </p>
-                        <ul class="content">
-                            <li>Serving as project manager for a partnership between the Aggie Data
-                                Science Club and General Motors by expanding upon transportation
-                                research from the Federal Highway Administration's National Highway
-                                Travel Survey and identifying applications for GM's mission
-                                statement.</li>
-                            <li>Leading a team of 40 students to gain skills in understanding
-                                data science applications in research and developing expertise in
-                                ML research and predictive modeling techniques.</li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="entry">
-                    <div class="image">
-                        <img src="data/images/adsc_x_aotw.png" 
-                        alt="Icon for collaboration between Aggie Data Science Club and TAMU Album of the Week">
-                    </div>
-                    <div class="details">
-                        <h3 class="title">Album of the Week Recommendation Tool</h3>
-                        <p class="role">
-                            Feb '24 - Present <span class="separator">|</span>
-                            Aggie Data Science Club
-                        </p>
-                        <ul class="content">
-                            <li>Serving as project manager for a partnership between the Aggie Data
-                                Science Club and TAMU Album of the Week by building an album
-                                recommendation system for AOTW by taking album ratings and analyzing
-                                discussions to create greater involvement in the club.</li>
-                        </ul>
-                    </div>
-                </section>
+                
+                
             </div>
+            <script>
+                document.getElementById('toggle-projects').addEventListener('change', function() {
+                    const allProjects = document.querySelectorAll('#projects .entry');
+                    allProjects.forEach(project => {
+                        if (!project.classList.contains('favorite')) {
+                            project.style.display = this.checked ? 'flex' : 'none';
+                        }
+                    });
+                });
+            </script>
             <hr>
             <div id="service">
                 <h2>Service</h2>
+                <section class="entry">
+                    <div class="image">
+                        <img src="data/images/umassdsc_logo.png" alt="Logo of TAMU Datathon">
+                    </div>
+                    <div class="details">
+                        <h3 class="title">UMass Data Science Club</h3>
+                        <p class="role">
+                            Project Leader <span class="separator">|</span> Sep '24 - Present
+                            <span class="separator">|</span> <a href="https://linktr.ee/UMassDataScienceClub" target="_blank" rel="noopener noreferrer">
+                            [link]</a>
+                        </p>
+                        <ul class="content">
+                            <li>Serving as a project leader for undergraduate students an intermediate
+                                project to tailor music recommendations from Musicboard data in Fall
+                                2024.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
                 <section class="entry">
                     <div class="image">
                         <img src="data/images/tamu_datathon_logo.png" alt="Logo of TAMU Datathon">
@@ -424,12 +448,12 @@
                                 Discord bots.</li>
                             <li>Created the club's website on-and-off over the span of 8 months, 
                                 continue to moderate and make bug fixes since July 2023.</li>
-                            <li>Assumed data science responsibilities in the club, including finding an algorithm for an
-                                album recommendation system for the club, creating an <a href="data/images/aotw_2023_recs_retrospective.png"
+                            <li>Assumed data science responsibilities in the club, including developing an album recommendation tool based on
+                                member ratings (with an RMSE of 1.34), creating an <a href="data/images/aotw_2023_recs_retrospective.png"
                                 target="_blank" rel="noopener noreferrer">infographic of song recommendations posted by members in 2023</a>,
                                 analyzing and plotting statistics of the club at end-of-year celebrations.
                                 The analyses for end-of-year celebrations can be viewed here: 
-                                Spring 2024, 
+                                <a href="data/Spring_2024_Wrapped.pptx" target="_blank" rel="noopener noreferrer">Spring 2024</a>, 
                                 <a href="data/Fall_2023_Wrapped.pdf" target="_blank" rel="noopener noreferrer">Fall 2023</a>,
                                 <a href="data/Spring_2023_Wrapped.pdf" target="_blank" rel="noopener noreferrer">Spring 2023</a>.</li>
                         </ul>
@@ -454,9 +478,15 @@
                             <li>Delegated financial obligations and defined treasury role, working 
                                 with transactions for meetings, special events, and merchandise 
                                 orders.</li>
-                            <li>Worked closely with 15 project managers as a projects officer to 
-                                discuss deliverables and resolve roadblocks in ADSC-sponsored 
-                                projects.</li>
+                            <li>Led a combined total of over 100 students in data science projects
+                                across three semesters with over 90% positive feedback. Projects
+                                include:</li>
+                            <ul>
+                                <li>American Airlines Collaboration Project (Spring 2023)</li>
+                                <li>Kaggle Walkthrough (Fall 2023)</li>
+                                <li>General Motors Collaboration Project (Spring 2024)</li>
+                                <li>Album of the Week Recommendation Tool (Spring 2024)</li>
+                            </ul>
                             <li>Resolved roadblocks and ensure student-led projects are running 
                                 smoothly, leading oversight on projects with over 250 members 
                                 combined in the Fall 2023 and Spring 2024 semesters.</li>
@@ -473,7 +503,8 @@
                         target="_blank" rel="noopener noreferrer">stalk me on Spotify</a>.</li>
                     <ul>
                         <li>Some of my favorite artists are Beach House, Fleet Foxes, Death Cab for 
-                            Cutie, Weyes Blood, James Blake, St. Vincent, and Nation of Language.</li>
+                            Cutie, Weyes Blood, James Blake, St. Vincent, Nation of Language, and
+                            Magdalena Bay.</li>
                     </ul>
                     <li>I enjoy going on long runs, and ran the Bryan-College Station half-marathon 
                         in 2022, finishing with a time of 2:01:50!</li>
