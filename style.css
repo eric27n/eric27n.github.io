@@ -202,17 +202,17 @@ footer {
 }
 
 /* Social Media Icons */
-.linkedin-footer, .github-footer, .spotify-footer {
+.linkedin-footer, .github-footer, .hf-footer, .spotify-footer {
     display: block;
     position: relative;
 }
 
-.linkedin-footer .linkedin-black, .github-footer .github-black, .spotify-footer .spotify-black {
+.linkedin-footer .linkedin-black, .github-footer .github-black, .hf-footer .hf-black, .spotify-footer .spotify-black {
     opacity: 1;
     transition: opacity 0.5s;
 }
 
-.linkedin-footer .linkedin-top, .github-footer .github-top, .spotify-footer .spotify-top {
+.linkedin-footer .linkedin-top, .github-footer .github-top, .hf-footer .hf-top, .spotify-footer .spotify-top {
     opacity: 0;
     position: absolute;
     transition: opacity 0.5s;
@@ -223,11 +223,11 @@ footer {
     object-fit: contain;
 }
 
-.linkedin-footer:hover .linkedin-black, .github-footer:hover .github-black, .spotify-footer:hover .spotify-black {
+.linkedin-footer:hover .linkedin-black, .github-footer:hover .github-black, .hf-footer:hover .hf-black, .spotify-footer:hover .spotify-black {
     opacity: 0;
 }
 
-.linkedin-footer:hover .linkedin-top, .github-footer:hover .github-top, .spotify-footer:hover .spotify-top {
+.linkedin-footer:hover .linkedin-top, .github-footer:hover .github-top, .hf-footer:hover .hf-top, .spotify-footer:hover .spotify-top {
     opacity: 1;
 }
 
