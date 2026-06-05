@@ -24,24 +24,38 @@
         <div class="class-content">
             <img src="data/images/eric-nunes.JPG" class="profile-picture" alt="Profile Picture">
             <h1>Howdy, I'm Eric Nunes! 🤠</h1>
-            <p>I am an aspiring data scientist with strong skills in software engineering. Born and 
-                raised in Texas to Brazilian immigrants, I'm currently a graduate computer science 
-                student at the University of Massachusetts Amherst, having recently completed my 
-                undergraduate computer science degree at Texas A&M University! I anticipate to 
-                graduate with my Master's in Computer Science in Spring 2026, with a focus in data 
-                science and natural language processing. Outside of computer/data work, my other 
-                interests are in music, hiking, and reading.</p>
-            <p>Currently, I'm spending my time finishing my master's degree and working on personal
-                projects. If you're interested in a one-page summary of my work, feel free to take 
-                a look at my <a href="data/Eric_Nunes_Resume_2508.pdf" target="_blank" 
-                rel="noopener noreferrer">resume</a> (last updated August 2025). I'm currently in 
-                the market for full-time roles starting in Summer 2026, particularly for data 
-                scientist, data engineering, machine learning engineering, and research/applied 
-                scientist roles. If you would like to connect with me, please feel free and <a href=
-                "mailto:eric27n@me.com">reach out</a>, I'd love to talk!</p>
+            <p>I am a data scientist with strong skills in software engineering, natural language 
+                processing, and applied machine learning. Born and raised in Texas to Brazilian 
+                immigrants, I'm a recent computer science graduate, having completed my Master's 
+                degree at the University of Massachusetts Amherst in May 2026 and before that my 
+                undergraduate degree at Texas A&M University in May 2024. Outside of computer/data 
+                work, my other interests are in music, running, and reading.</p>
+            <p>I've recently completed my Master's degree and accepted a full-time position as a 
+                data scientist at Walmart Global Tech! I will be relocating and based in the San 
+                Francisco Bay Area starting in July. If you're interested in learning more about my 
+                work, feel free to take a look at my 
+                <a href="data/Eric_Nunes_Resume_2606.pdf" target="_blank" 
+                rel="noopener noreferrer">resume</a> (last updated June 2026). If you would like to 
+                connect with me, please feel free and <a href="mailto:eric27n@me.com">reach out</a>, 
+                I'd love to talk!</p>
             <hr>
             <div id="experience">
                 <h2>Experience</h2>
+                <section class="entry">
+                    <div class="image">
+                        <img src="data/images/walmartglobaltech_logo.png" alt="Logo for Walmart Global Tech">
+                    </div>
+                    <div class="details">
+                        <h3 class="subtitle">Data Scientist III</h3> 
+                        <span class="separator">|</span> <h3 class="title">Walmart Global Tech</h3>
+                        <p class="role">
+                            Jul '26 - Present <span class="separator">|</span> Sunnyvale, CA
+                        </p>
+                        <ul class="content">
+                            <li>Incoming data scientist at Walmart Global Tech.</li>
+                        </ul>
+                    </div>
+                </section>
                 <section class="entry">
                     <div class="image">
                         <img src="data/images/walmartglobaltech_logo.png" alt="Logo for Walmart Global Tech">
@@ -53,17 +67,16 @@
                             Jun '25 - Aug '25 <span class="separator">|</span> Sunnyvale, CA
                         </p>
                         <ul class="content">
-                            <li>Designed and implemented a robust data pipeline to enable scalable 
-                                and accurate attribute extraction for Walmart's Google Merchant 
-                                Center feed, resulting in a projected 3% increase in organic CTR 
-                                and $10M growth in GMV.</li>
-                            <li>Engineered and fine-tuned an NLP-based span prediction model for 
-                                large-scale product attribute value extraction, utilizing 20M+ 
-                                attribute-value pairs from diverse e-commerce datasets, and 
-                                achieving an F1 Score of 84%.</li>
-                            <li>Conducted model benchmarking, hyperparameter tuning, and comparative 
-                                analysis across different model architectures, optimizing for 
-                                precision, recall, and business impact.</li>
+                            <li>Built a scalable attribute value extraction (AVE) pipeline for 
+                                Walmart product titles, improving missing Google Merchant Center 
+                                attribute coverage to support a projected 3% increase in organic 
+                                CTR and $10M growth in GMV.</li>
+                            <li>Created a 20M+ sample AVE training dataset across thousands of 
+                                product attributes using weak supervision, public e-commerce 
+                                datasets, and internal Walmart product data.</li>
+                            <li>Fine-tuned and benchmarked transformer models for product attribute 
+                                retrieval, improving F1 over the production baseline by up to 25% 
+                                and achieving an F1 score of 84% on a held-out test set.</li>
                             <li><b>Skills:</b> Python (Transformers, PyTorch, Pandas, Sklearn), 
                                 PySpark, Google Cloud Platform (GCP), SQL, Git/Github, Natural  
                                 Language Processing (NLP), Deep Learning</li>
@@ -107,8 +120,9 @@
                                 in collaboration with the machine learning team on Intune, 
                                 increasing scope to over 10k settings.</li>
                             <li>Implemented a setting recommendation feature as a domain-specific
-                                task for Microsoft Security Copilot, gaining expertise on prompt
-                                engineering and generative AI.</li>
+                                task for Microsoft Security Copilot, enabling administrators to 
+                                query and receive personalized setting recommendations through 
+                                natural language prompts.</li>
                             <li><b>Skills:</b> C#, Scala, TypeScript, Large Language Models (LLMs), 
                                 Git/Github, Software Engineering, Data Engineering</li>
                         </ul>
@@ -162,12 +176,13 @@
                             <span class="separator">|</span> Expected May '26
                         </p>
                         <ul class="content">
-                            <li><b>GPA:</b> 3.883/4.000</li>
+                            <li><b>GPA:</b> 3.818/4.000</li>
                             <li><b>Concentration:</b> Data Science</li>
                             <li><b>Selected Coursework:</b> Algorithms in Data Science, 
                             Computational Biology & Bioinformatics, Decarbonization and Data 
-                            Science, Machine Learning, Natural Language Processing, Research 
-                            Methods in Computer Science</li>
+                            Science, Fixing Social Media, Information Retrieval, Machine Learning, 
+                            Natural Language Processing, Research Methods in Empirical Computer 
+                            Science, Simulation Methods, Systems for Data Science</li>
                         </ul>
                     </div>
                 </section>
@@ -195,13 +210,38 @@
             <hr>
             <div id="projects">
                 <h2>Projects</h2>
-                <p><b>Note: </b>Due to academic honor codes or other confidentiality agreements, not
-                    all projects can have their code publicized. If you would like to learn more about
+                <p><b>Note: </b>Due to academic honor codes or other confidentiality agreements, not 
+                    all projects can have code be made public. If you would like to learn more about 
                     a certain project, please send me an email and provide context to request access.</p>
                 <p>Only featured projects are shown by default. Toggle the checkbox to view all projects.</p>
                 <label>
                     <input type="checkbox" id="toggle-projects"> Show All Projects
                 </label>
+                <section class="entry favorite">
+                    <div class="image">
+                        <img src="data/images/bert.jpeg" 
+                        alt="Icon for Tiny SciBERT">
+                    </div>
+                    <div class="details">
+                        <h3 class="title">SciEncoder: A Tiny Domain-Specific Encoder</h3>
+                        <p class="role">
+                            Oct '25 - May '26 <span class="separator">|</span> 
+                            Personal Project / UMass AI/ML Club<span class="separator">|</span> 
+                        <a href="https://github.com/eric27n/sciencoder-massai" target="_blank" 
+                        rel="noopener noreferrer">[link]</a>
+                        </p>
+                        <ul class="content">
+                            <li>Designed a compact 54M-parameter BERT-style scientific encoder 
+                                pre-trained on ~1.5B tokens of multi-domain scientific text, 
+                                creating a lightweight alternative with 50% fewer parameters than 
+                                BERT Base.</li>
+                            <li>Led a team of five through their first end-to-end data science 
+                                project, assigning work in data preprocessing and benchmarking, and 
+                                teaching concepts in NLP, computer science research, and GitHub.</li>
+                            <li><b>Skills:</b> Python, PyTorch, Hugging Face Transformers</li>
+                        </ul>
+                    </div>
+                </section>
                 <section class="entry favorite">
                     <div class="image">
                         <img src="data/images/nyt_connections_logo.png" alt="Logo of New York Times Connections">
@@ -261,18 +301,35 @@
                             <li>Outperformed GPT-4o baseline with an 8.5x increase in games solved 
                                 within 200 guesses, achieving a 94% solve rate compared to 11% with
                                 LLM baseline.</li>
-                            <li><b>Skills:</b> (Gymnasium, NTLK, Gensim, Sklearn, Pandas), 
+                            <li><b>Skills:</b> Python (Gymnasium, NTLK, Gensim, Sklearn, Pandas), 
                                 Reinforcement Learning, Natural Language Processing (NLP)</li>
                         </ul>
                     </div>
                 </section>
+                <!-- <section class="entry favorite">
+                    <div class="image">
+                        <img src="data/images/cookbook_logo.png" alt="Unknown Icon">
+                    </div>
+                    <div class="details">
+                        <h3 class="title">Comp Bio Project</h3>
+                        <p class="role">
+                            Mar '25 - May '25<span class="separator">|</span> COMPSCI 690U:  
+                            Computational Biology & Bioinformatics <span class="separator">|</span>
+                            <a href="https://github.com/eric27n/compsci-690u-project" target="_blank" rel="noopener noreferrer">[link]</a>
+                        </p>
+                        <ul class="content">
+                            <li>details</li>
+                            <li><b>Skills:</b> X, Y, Z</li>
+                        </ul>
+                    </div>
+                </section> -->
                 <section class="entry">
                     <div class="image">
                         <img src="data/images/musicboard_logo.png" alt="Logo of Musicboard App">
                     </div>
                     <div class="details">
                         <h3 class="title">Let's Build a Music Recommender (LBaMR)</h3>
-                        <p class="role">Sep '24 - Present <span class="separator">|</span>
+                        <p class="role">Sep '24 - Dec '24 <span class="separator">|</span>
                         UMass Data Science Club<span class="separator">|</span> 
                         <a href="https://github.com/eric27n/LBaMR" target="_blank" 
                         rel="noopener noreferrer">[link]</a></p>
@@ -493,23 +550,21 @@
                     </div>
                 </section>
                 <h4>🚧Projects In Development🚧</h4>
-                <section class="entry favorite">
+                No active projects, check back soon!
+                <section class="entry">
                     <div class="image">
-                        <img src="data/images/bert.jpeg" 
-                        alt="Icon for Tiny SciBERT">
+                        <img src="data/images/cookbook_logo.png" 
+                        alt="Unknown Icon">
                     </div>
                     <div class="details">
-                        <h3 class="title">A Tiny Domain-Specific Encoder</h3>
+                        <h3 class="title">Class Projects Spring 2026</h3>
                         <p class="role">
-                            Oct '25 - Present <span class="separator">|</span> 
-                            Personal Project / UMass AI/ML Club
+                            Mar '26 - May '26 <span class="separator">|</span> 
+                            CSCE 532 & CSCE 627
                         </p>
                         <ul class="content">
-                            <li>Leading a team of five to develop a tiny domain-specific encoder 
-                                akin to SciBERT for scientific literature processing and downstream 
-                                tasks.</li>
-                            <li>"I got one more in me." -Vince Carter on returning for his 22nd season</li>
-                            <li><b>Skills:</b> Python, PyTorch, Hugging Face Transformers</li>
+                            <li>Class projects for CSCE 532 [Systems for Data Science] and CSCE 627
+                                [Fixing Social Media].</li>
                         </ul>
                     </div>
                 </section>
@@ -534,14 +589,14 @@
                     <div class="details">
                         <h3 class="title">UMass AI/ML Club</h3>
                         <p class="role">
-                            Project Leader <span class="separator">|</span> Jan '25 - Present
+                            Project Leader <span class="separator">|</span> Jan '25 - May '26
                             <span class="separator">|</span> <a href="https://umassai.com" target="_blank" rel="noopener noreferrer">
                             [link]</a>
                         </p>
                         <ul class="content">
-                            <li>Serving as a project leader for undergraduate students on projects 
+                            <li>Served as a project leader for undergraduate students on projects 
                                 involving AI and machine learning, including the AI Connections 
-                                Solver in Spring 2025.
+                                Solver in Spring 2025 and SciEncoder in Spring 2026.
                             </li>
                         </ul>
                     </div>
@@ -615,7 +670,7 @@
                         <ul class="content">
                             <li>Among the original officer team at the club's founding, served as 
                                 treasurer from December 2021 to May 2023, and served as projects 
-                                officer from May 2023 to present.</li>
+                                officer from May 2023 to May 2024.</li>
                             <li>Delegated financial obligations and defined treasury role, working 
                                 with transactions for meetings, special events, and merchandise 
                                 orders.</li>
@@ -639,23 +694,19 @@
             <div id="misc">
                 <h2>Miscellaneous</h2>
                 <ul>
-                    <li>I love discovering new music, particularly indie music! If you're curious, 
-                        you can <a href="https://music.apple.com/profile/numeric" target="_blank" 
-                        rel="noopener noreferrer">stalk me on Apple Music</a>.</li>
-                    <li>On top of my interest in new/indie music, I'm also an active member at 
-                        <a href="https://wmua.org/" target="_blank" rel="noopener noreferrer">WMUA 91.1 FM</a>, 
-                        the college radio station at UMass Amherst, where I host two shows in the 
-                        Spring 2026 semester: <i>The Roaring Twenties</i> (Tuesdays 2-3PM Eastern on 
-                        WMUA-FM), and <i>Seasons Change</i> (Wednesdays 9-11AM Eastern on WMUAx).</li>
-                    <li>Some of my favorite hiking spots include the White Mountains in New 
-                        Hampshire and the Mount Rainier National Park in Washington. I also love to 
-                        go on long runs, and I'm currently training to run two half-marathons in  
-                        May and July, as well as my first full marathon in Sacramento in December. 
-                        If you want to learn more about my physical activity, you can <a href="https://www.strava.com/athletes/43142989"
+                    <li>I love discovering new music, particularly indie music! I was a highly 
+                        active member of Texas A&M's <a href="https://tamuaotw.com" target="_blank" 
+                        rel="noopener noreferrer">Album of the Week</a> club and UMass Amherst's 
+                        <a href="https://wmua.org/" target="_blank" rel="noopener noreferrer">WMUA 91.1 FM</a>.
+                        If you're interested in what I'm listening to, you can <a href="https://music.apple.com/profile/numeric" 
+                        target="_blank" rel="noopener noreferrer">stalk me on Apple Music</a>.</li>
+                    <li>Running is a huge part of my identity! I'm currently training to run 
+                        my first full marathon in Sacramento this December. If you want to learn 
+                        more about my physical activity, you can <a href="https://www.strava.com/athletes/43142989" 
                         target="_blank" rel="noopener noreferrer">stalk me on Strava</a>.</li>
                     <li>One of my favorite hobbies (and biggest distractions) is going down
-                        Wikipedia rabbit holes! Unless I'm off the grid, chances are I'm reading  
-                        something on Wikipedia every day. I also <a href="https://en.wikipedia.org/wiki/Special:Contributions/Redolta"
+                        Wikipedia rabbit holes! Unless I'm off the grid, I'm reading something 
+                        on Wikipedia every single day. I also <a href="https://en.wikipedia.org/wiki/Special:Contributions/Redolta"
                         target="_blank" rel="noopener noreferrer">edit Wikipedia</a> from time to
                         time.</li>
                     <li>In high school, I was a member of the Vandegrift HS Marching Band for four 
@@ -664,6 +715,8 @@
                         championships! You can watch a video of the performance 
                         <a href="https://www.youtube.com/watch?v=9n1lFPz2IS8" target="_blank" 
                         rel="noopener noreferrer">here</a>.</li>
+                    <li>I've been to all 50 states in the United States! The last state I visited 
+                        was Alaska in August 2023.</li>
                     <li>Alongside being a U.S. citizen 🇺🇸, I am also a citizen of Brazil 🇧🇷, and can 
                         speak Portuguese at a professional level! I can also speak Spanish at an 
                         intermediate level and French at a beginner level.</li>
@@ -673,7 +726,7 @@
     </div>
     <footer>
         <div class="footer-left">
-            <p>Email: eric27n [at] me [dot] com (personal), eenunes [at] umass [dot] edu (work)</p>
+            <p>Email: eric27n [at] me [dot] com (personal)</p>
             <div class="smaller-text">
                 <p>This website was heavily inspired by the websites of 
                     <a href="https://larenspear.github.io/" target="_blank" rel="noopener noreferrer">
@@ -702,7 +755,23 @@
                     alt="Link to Eric Nunes GitHub">
                 </div>
             </a>
-            <a href="https://open.spotify.com/user/bao2gq7wkdvblfemv1ge9jrxm?si=0a8f67903ce44f32"
+            <!-- <a href="https://instagram.com/numerictx" target="_blank" rel="noopener noreferrer">
+                <div class="instagram-footer">
+                    <img src="data/images/instagram_logo_black.png" class="instagram-black" 
+                    alt="Link to Eric Nunes Instagram">
+                    <img src="data/images/instagram_logo.png" class="instagram-top" 
+                    alt="Link to Eric Nunes Instagram">
+                </div>
+            </a> -->
+            <a href="https://www.strava.com/athletes/43142989" target="_blank" rel="noopener noreferrer">
+                <div class="strava-footer">
+                    <img src="data/images/strava_logo_black.png" class="strava-black" 
+                    alt="Link to Eric Nunes Strava">
+                    <img src="data/images/strava_logo.png" class="strava-top" 
+                    alt="Link to Eric Nunes Strava">
+                </div>
+            </a>
+            <!-- <a href="https://open.spotify.com/user/bao2gq7wkdvblfemv1ge9jrxm?si=0a8f67903ce44f32"
             target="_blank" rel="noopener noreferrer">
                 <div class="spotify-footer">
                     <img src="data/images/spotify_logo_black.png" class="spotify-black" 
@@ -710,7 +779,7 @@
                     <img src="data/images/spotify_logo.png" class="spotify-top" 
                     alt="Link to Eric Nunes Spotify">
                 </div>
-            </a>
+            </a> -->
         </div>
     </footer>    
   </body>
